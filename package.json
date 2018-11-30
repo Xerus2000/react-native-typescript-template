@@ -1,0 +1,50 @@
+{
+	"name": "react-native-typescript-template",
+	"main": "node_modules/expo/AppEntry.js",
+	"private": true,
+	"scripts": {
+		"start": "npm install && tsc && expo start",
+		"restart": "npm run clean && npm start",
+		"reinstall": "npm run clean && npm install",
+		"clean": "rimraf package-lock.json && rimraf node_modules",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"eject": "expo eject",
+		"test": "node ./node_modules/jest/bin/jest.js --watchAll"
+	},
+	"dependencies": {
+		"expo": "^31.0.5",
+		"react": "^16.6.3",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-31.0.1.tar.gz",
+		"react-navigation": "^2.18.3"
+	},
+	"devDependencies": {
+		"@types/expo": "^31.0.1",
+		"@types/jest": "^23.3.10",
+		"@types/react": "^16.7.10",
+		"@types/react-native": "^0.57.1",
+		"@types/react-test-renderer": "^16.0.3",
+		"react-native-typescript-transformer": "^1.2.10",
+		"rimraf": "latest",
+		"schedule": "^0.4.0",
+		"typescript": "^3.2.1"
+	},
+	"jest": {
+		"preset": "react-native",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js"
+		],
+		"transform": {
+			"^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+			"\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+		},
+		"testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+		"testPathIgnorePatterns": [
+			"\\.snap$",
+			"<rootDir>/node_modules/"
+		],
+		"cacheDirectory": ".jest/cache"
+	}
+}
