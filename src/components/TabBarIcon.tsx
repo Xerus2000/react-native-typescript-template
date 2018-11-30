@@ -1,5 +1,4 @@
 import React from 'react'
-// @ts-ignore
 import { Icon } from 'expo'
 
 import Colors from '../constants/Colors'
