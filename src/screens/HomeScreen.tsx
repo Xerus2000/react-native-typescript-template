@@ -4,6 +4,7 @@ import { Tex } from '../components/StyledText'
 import Styles from '../constants/Styles'
 
 export default class HomeScreen extends React.Component {
+
 	render() {
 		return <View style={Styles.container}>
 			<Tex>This is the HomeScreen</Tex>
@@ -11,10 +12,3 @@ export default class HomeScreen extends React.Component {
 	}
 
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#112',
-	},
-})

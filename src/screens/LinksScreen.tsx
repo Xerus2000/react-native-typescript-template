@@ -6,10 +6,9 @@ import { Tex } from '../components/StyledText'
 export default class LinksScreen extends React.Component {
 
 	render() {
-		return (
-			<View style={Styles.container}>
-				<Tex>This is the LinksScreen</Tex>
-			</View>
-		)
+		return <View style={Styles.container}>
+			<Tex>This is the LinksScreen</Tex>
+		</View>
 	}
+
 }

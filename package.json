@@ -3,10 +3,10 @@
 	"main": "node_modules/expo/AppEntry.js",
 	"private": true,
 	"scripts": {
-		"start": "npm install && tsc && expo start",
+		"start": "npm install && rimraf src/**/*.js && tsc && expo start",
 		"restart": "npm run clean && npm start",
 		"reinstall": "npm run clean && npm install",
-		"clean": "rimraf package-lock.json && rimraf node_modules",
+		"clean": "rimraf package-lock.json && rimraf src/**/*.js && rimraf node_modules",
 		"android": "expo start --android",
 		"ios": "expo start --ios",
 		"eject": "expo eject",
